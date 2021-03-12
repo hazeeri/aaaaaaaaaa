@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="wawa.css">
+</head>
+<body style="background-color: #D7E3FC;">
+
+<div class="header">
+  <h1>Untitled.</h1>
+</div>
+
+
+<div id="navbar">
+  <a href="#home">Home</a>
+  <a href="#workshop">About</a>
+  <a href="https://forms.gle/a9KireuCW1kSSzPY8">Join us!</a>
+</div></div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<!-- Am I the Same? -->
+<div id="home"></div>
+  <div class="content">
+<center>
+
+<h2 style="text-align:center; font-size: 50px; color:#001233;">Untitled.</h2>
+<br><p style="font-family:'Montserrat', sans-serif;font-size:20px;"><b><i>Untitled</i></b>— is a workshop where we encourage teens and netizens to spread positivity throughout the internet.</p>
+
+<p style="font-family:'Montserrat', sans-serif;font-size:20px;"><b><i>Our goal</i></b>— is to spread awareness regarding this type of bullying going on in the internet, most people call this as <i>Cyberbullying.</i></p>
+
+<p style="font-family:'Montserrat', sans-serif; font-size:20px;"><b><i>Our team</i></b>— offers great hospitality, positive and open-minded environment for our participants to feel free expressing themselves with each one of us.</p>
+</br>
+</div>
+
+<!--Modal-->
+<div id="workshop"></div>
+ <center id="workshop"> <h1 style="text-align: center; font-size: 40px; color:#001233;">Our Workshop</h1>
+<style>
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #FFF1E6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #001233;
+  color: #FFF1E6;
+  font-size: 25px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  background-color: #CCD8E5;
+  font-size: 20px;
+  color: #001233;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #001233;
+  color: #FFF1E6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+</style>
+
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" class="btn" style="font-family:'Architects Daughter', cursive; font-size:25px;">Open Me !</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Are you ready? Join Us Now!</h2>
+      <p style="font-family:'Montserrat', sans-serif; font-size:20px; text-align:25px;">For us to achive our goal, we would love to invite you guys to participate in our workshop. We will keep you guys informed when will our workshop will take place by signing up here.</p>
+    </div>
+    <div class="modal-body">
+      <iframe src="https://forms.gle/a9KireuCW1kSSzPY8" width="950" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+    </div>
+    <div class="modal-footer">
+      <h3>@Group9</h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+
+var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<div class="content" id="about">
+
+
+<!-- Team Profile -->
+ <center> <h1 style="text-align: center; color:#001233; font-size: 40px;">Meet Our Team !</h1>
+   <div class="row">
+
+  <div class="column">
+    <div class="in">
+      <img src=""  style="width:260px;">
+      <h2 style="color:#F0EFEB;">Jairah Reign</h2>
+      <h3>Facilitator</h3><br>
+      <p style="color:#F0EFEB;">Lorem ipsum dolor sit amet. Qui illo totam ex suscipit vero eos omnis similique et alias nihil. Cum facilis laborum sed quaerat molestiae qui repellendus sit quod corporis ut veritatis laborum sit nesciunt placeat aut architecto asperiores.</p>
+    </div>
+  </div>
+
+    <div class="column">
+    <div class="in">
+      <img src=""  style="width:260px;">
+      <h2 style="color:#F0EFEB;">Ma. Sophia</h2>
+      <h3>Scribe</h3><br>
+      <p style="color:#F0EFEB;">Lorem ipsum dolor sit amet. Qui illo totam ex suscipit vero eos omnis similique et alias nihil. Cum facilis laborum sed quaerat molestiae qui repellendus sit quod corporis ut veritatis laborum sit nesciunt placeat aut architecto asperiores.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="in">
+      <img src=""  style="width:260px;">
+      <h2 style="color:#F0EFEB;">Justine</h2>
+      <h3>Researcher</h3><br>
+      <p style="color:#F0EFEB;">Lorem ipsum dolor sit amet. Qui illo totam ex suscipit vero eos omnis similique et alias nihil. Cum facilis laborum sed quaerat molestiae qui repellendus sit quod corporis ut veritatis laborum sit nesciunt placeat aut architecto asperiores.</p>
+    </div>
+  </div>
+
+    <div class="column">
+    <div class="in">
+      <img src=""  style="width:260px;">
+      <h2 style="color:#F0EFEB;">Jessie James</h2>
+      <h3>Spokesperson</h3><br>
+      <p style="color:#F0EFEB;">Lorem ipsum dolor sit amet. Qui illo totam ex suscipit vero eos omnis similique et alias nihil. Cum facilis laborum sed quaerat molestiae qui repellendus sit quod corporis ut veritatis laborum sit nesciunt placeat aut architecto asperiores.</p>
+    </div>
+  </div>
+
+  </div>
+  </center>
+</div>
+
+<!-- Footer -->
+	<footer class="footer-distributed">
+
+		<div class="footer-left">
+  <h1 style="color: #FFF1E6">Do you think..</h1>
+		<div class="v">
+<br><h3 style="color: #FFF1E6;">I'm still the Same?</h3></div>
+<br>
+
+		</div>
+
+		<div class="footer-right">
+		<div>
+		<i class="fa fa-phone"></i>
+		<div class="icons" style="color: #FFF1E6;"><img src="awa_mail.png">  Questions? Concerns? Email Us!
+		<br><p><a href="mailto:ap.jairahreign.gatchalian@apecschools.edu.ph">ap.jairahreign.gatchalian@apecschools.edu.ph</a></p><p><a href="mailto:ap.masophia.geremiano@apecschools.edu.ph">ap.masophia.geremiano@apecschools.edu.ph</a></p><p><a href="mailto:ap.justine.tambo@apecschools.edu.ph">ap.justine.tambo@apecschools.edu.ph</a></p><p><a href="mailto:ap.jessiejames.sierra@apecschools.edu.ph">ap.jessiejames.sierra@apecschools.edu.ph</a></p>
+		</div></div>
+
+
+
+		</footer>
+
+</body>
+</html>

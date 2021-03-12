@@ -1,0 +1,288 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	Left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.title h1{
+	color: #001233;
+	font-size: 80px;
+}
+.button {
+ text-align: center;
+}
+
+.btn{
+	border: 1px solid #00000;
+	padding: 20px 60px;
+	background-color: #012A4A;
+	color: white;
+	text-decoration: none;
+	transition: 0.4s ease;
+}
+
+.btn:hover{
+	background-color: white;
+	color: black;
+}
+
+.content {
+  padding: 50px;
+  font-family:'Architects Daughter', cursive;
+  background-color: #D7E3FC;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header {
+  background-color: #D7E3FC;
+  padding: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Architects Daughter', cursive;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  color: #001233;
+	font-size: 60px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #012A4A;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #FFF1E6;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#navbar a:hover {
+  background-color: #FFF1E6;
+  color: black;
+  transition: 0.6s ease;
+}
+
+.content {
+  padding: 25px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+  background-color: #D7E3FC;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  background-color: #D7E3FC;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.in {
+  background-color: #33415C;
+  padding: 25px;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 20px;
+  font: bold;
+
+}
+.in h3{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF1E6;
+}
+
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Am I the Same? Section */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+/* footer */
+
+footer{
+	position: below;
+	bottom: 0;
+}
+.footer-distributed{
+	background-color: #012A4A;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #fefefe;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+
+.footer-distributed .footer-links{
+	color:  #fefefe;
+	margin: 20px 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+.footer-distributed .footer-right{
+	width: 35%;
+}
+
+.icons img{
+  float: center;
+  width: 45px;
+	height: 60;
+	background-color: transparent;
+}
+
+.icons {
+  text-align: center;
+}
+
+.footer-distributed .footer-right i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-right p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-right p a{
+	color:  #FFE5D9;
+	text-decoration: none;
+}
+
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px;
+
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 90%;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
